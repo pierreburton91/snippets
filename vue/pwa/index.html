@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="canonical" href="https://<%= htmlWebpackPlugin.options.subDomain %>.<%= htmlWebpackPlugin.options.domain %>" />
+  <meta name="description"
+    content="<%= htmlWebpackPlugin.options.description %>">
+  <meta name="abstract" content="<%= htmlWebpackPlugin.options.abstract %>">
+  <meta name="rating" content="General">
+  <meta property="og:image" content="https://<%= htmlWebpackPlugin.options.subDomain %>.<%= htmlWebpackPlugin.options.domain %>/img/icons/android-chrome-maskable-512x512.png">
+  <meta property="og:image" content="https://<%= htmlWebpackPlugin.options.subDomain %>.<%= htmlWebpackPlugin.options.domain %>/img/twitter-card.png">
+  <meta property="og:site_name" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta property="og:description"
+    content="<%= htmlWebpackPlugin.options.abstract %>">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://<%= htmlWebpackPlugin.options.subDomain %>.<%= htmlWebpackPlugin.options.domain %>">
+  <meta property="og:locale" content="<%= htmlWebpackPlugin.options.locale %>">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://<%= htmlWebpackPlugin.options.subDomain %>.<%= htmlWebpackPlugin.options.domain %>">
+  <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.description %>">
+  <meta name="twitter:image" content="https://<%= htmlWebpackPlugin.options.subDomain %>.<%= htmlWebpackPlugin.options.domain %>/img/twitter-card.png">
+  <link rel="apple-touch-startup-image" href="<%= BASE_URL %>img/splash/640x960.png"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="<%= BASE_URL %>img/splash/750x1334.png"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="<%= BASE_URL %>img/splash/1242x2208.png"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="<%= BASE_URL %>img/splash/1125x2436.png"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="<%= BASE_URL %>img/splash/1536x2008.png"
+    media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="<%= BASE_URL %>img/splash/1668x2224.png"
+    media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="<%= BASE_URL %>img/splash/2048x2732.png"
+    media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebApplication",
+    "name": "<%= htmlWebpackPlugin.options.title %>",
+    "url": "https://<%= htmlWebpackPlugin.options.subDomain %>.<%= htmlWebpackPlugin.options.domain %>",
+    "description": "<%= htmlWebpackPlugin.options.description %>",
+    "applicationCategory": "Business",
+    "featureList": "Envoi de commandes, Sauvegarde de commande, Copie de commande, Paiements en ligne",
+    "browserRequirements": "JavaScript, HTML5, CSS3",
+    "softwareVersion": "<%= htmlWebpackPlugin.options.version %>",
+    "operatingSystem": "All"
+  }</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=225929542"></script>
+</head>
+
+<body>
+  <noscript>
+    <strong>Désolé, <%= htmlWebpackPlugin.options.title %> ne peut pas fonctionner sans Javascript.</strong>
+  </noscript>
+  <div id="app"></div>
+</body>
+
+</html>
